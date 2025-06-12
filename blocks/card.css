@@ -1,12 +1,9 @@
-.card {
-  max-width: 413px;
-}
-
 .card__image {
   height: 413px;
-  width: 413px;
+  width: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -17,6 +14,10 @@
 
 .card__title {
   margin: 12px 0 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgba(33, 33, 33, 1);
 }
 
 .card__like-button {
@@ -25,4 +26,18 @@
   height: 20px;
   border: none;
   background-color: transparent;
+  padding: 0;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 668px) {
+  .card__image {
+    height: 288px;
+  }
+
+  .card__title {
+    max-width: 235px;
+    font-size: 16px;
+    line-height: 1;
+  }
 }
